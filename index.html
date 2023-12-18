@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <script src="https://kit.fontawesome.com/46d677cd40.js" crossorigin="anonymous"></script>
     <style>
         * {
             padding: 0px;
@@ -55,6 +56,13 @@
             color: black;
             padding: 5px 15px;
             border-radius: 12px;
+            display: none;
+        }
+
+        header .bar {
+            color: white;
+            font-size: 25px;
+            /* display: none; */
         }
 
         /* main Box Starts From Here */
@@ -65,7 +73,7 @@
             /* border: 2px solid red; */
             border-radius: 14px;
             padding: 8px;
-            height: 270px;
+            /* height: 270px; */
             width: 70%;
             margin: 100px auto;
 
@@ -77,7 +85,7 @@
 
         /* Box-1  */
         .box-1 {
-            /* border: 2px solid red; */
+            border: 2px solid red;
             border-radius: 16px;
             /* height: 200px; */
             width: 60%;
@@ -86,20 +94,23 @@
             text-align: center;
             padding: 30px 0px;
         }
-        .box-1 h1{
+
+        .box-1 h1 {
             color: rgb(17, 40, 218);
         }
-        .box-1 .images{
+
+        .box-1 .images {
             margin-top: 60px;
             display: flex;
             flex-wrap: wrap;
             /* align-items: center; */
 
             justify-content: space-around;
-            
+
         }
+
         .box-1 .images img {
-           
+
             width: 200px;
             /* height: 100; */
             border: 2px solid gray;
@@ -108,19 +119,171 @@
             margin: 24px 12px;
         }
 
-        footer{
+        footer {
             margin-top: 40px;
             background-color: rgb(116, 116, 116);
             height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            position: absolute;
+            left: 0;
+            bottom: 0.1;
+            width: 100%;
         }
-        footer h1{
+
+        footer h1 {
             /* border: 2px solid red; */
             /* color: red; */
             font-size: 20px;
-           
+
+
+        }
+
+        @media (max-width:1300px) {
+            .main {
+                /* border: 2px solid gray; */
+                /* color: rgb(17, 40, 218); */
+                /* color: red; */
+                /* border: 2px solid red; */
+                /* border-radius: 14px; */
+                /* padding: 8px; */
+                height: 270px;
+                /* width: 70%; */
+                /* margin: 100px auto; */
+
+                /* text-align: center; */
+                /* line-height: 65px; */
+
+                font-size: 16px;
+            }
+
+            .box-1 .images img {
+
+                width: 150px;
+                /* height: 100; */
+                /* border: 2px solid gray; */
+                border-radius: 14px;
+                padding: 14px;
+                margin: 24px 12px;
+            }
+
+            @media (max-width:1040px) {
+                header {
+                    padding: 0% 9%;
+                }
+
+                header nav {
+                    display: none;
+
+                }
+
+                .main {
+                    /* border: 2px solid gray; */
+                    /* color: rgb(17, 40, 218); */
+                    /* color: red; */
+                    /* border: 2px solid red; */
+                    /* border-radius: 14px; */
+                    /* padding: 8px; */
+                    /* height: 270px; */
+                    /* width: 70%; */
+                    /* margin: 100px auto; */
+
+                    /* text-align: center; */
+                    /* line-height: 65px; */
+
+                    font-size: 12px;
+                }
+
+                .box-1 h1 {
+                    color: rgb(17, 40, 218);
+                    font-size: 25px;
+                }
+
+
+            }
+
+            @media (max-width:410px) {
+                .main {
+                    font-size: 10px;
+                }
+            }
+
+            @media (max-width:890px) {
+                .box-1 .images img {
+
+                    width: 100px;
+                    /* height: 100; */
+                    /* border: 2px solid gray; */
+                    border-radius: 14px;
+                    padding: 14px;
+                    margin: 24px 12px;
+                }
+            }
+
+            @media (max-width:630px) {
+                .box-1 h1 {
+                    font-size: 24px;
+
+                }
+
+                .box-1 .images {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .box-1 .images img {
+                    width: 260px;
+                    height: 100;
+                    /* border: 2px solid gray; */
+                    border-radius: 14px;
+                    /* padding: 14px; */
+                    /* margin: 12px 4px; */
+                }
+            }
+
+            @media(max-width:487px) {
+                .box-1 {
+                    width: 100%;
+                }
+
+                .box-1 .images img {
+
+                    width: 70%;
+                    /* height: 100; */
+                    /* border: 2px solid gray; */
+                    border-radius: 14px;
+                    padding: 14px;
+                    margin: 24px 12px;
+                }
+
+
+            }
+
+            @media(max-width:412px) {
+                .main {
+                    font-size: 9px;
+                    line-height: 40px;
+                    height: 200px;
+                    /* color: green; */
+                }
+            }
+
+            @media(max-width:390px) {
+                .box-1 h1 {
+                    font-size: 22px;
+                }
+            }
+
+            @media(max-width: 300px){
+                .main {
+                    font-size: 7px;
+                    /* color: green; */
+                }
+            }
         }
     </style>
 </head>
@@ -138,6 +301,9 @@
         <div class="help">
             Help
         </div>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
 
     <div class="main">
@@ -151,20 +317,26 @@
 
         <div class="images">
             <img src="https://1000logos.net/wp-content/uploads/2020/08/Python-Logo.png" alt="Python Image">
-            
+
             <img src="https://www.oracle.com/img/tech/cb88-java-logo-001.jpg" alt="JAVA Image">
 
-            <img src="https://e0.pxfuel.com/wallpapers/453/31/desktop-wallpaper-ternary-operators-in-c-language-c-programming.jpg" alt="C Image">
-            
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaejaLYy_FCJMDLCK-x4ihFG1cYG_iYA9BddXyMuQ-6U-QoYpmGDk_pmSFhmvVIWutVNs&usqp=CAU" alt="C++ Image">
-            
-            <img src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn" alt="Html Image">
+            <img src="https://e0.pxfuel.com/wallpapers/453/31/desktop-wallpaper-ternary-operators-in-c-language-c-programming.jpg"
+                alt="C Image">
 
-            <img src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo" alt="CSS Image">
-            
-            <img src="https://img.freepik.com/premium-vector/computer-design-blue-background-vector-illustration_24908-44354.jpg?w=360" alt="JavaSCript Image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaejaLYy_FCJMDLCK-x4ihFG1cYG_iYA9BddXyMuQ-6U-QoYpmGDk_pmSFhmvVIWutVNs&usqp=CAU"
+                alt="C++ Image">
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png" alt="PHP Images">
+            <img src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn"
+                alt="Html Image">
+
+            <img src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo"
+                alt="CSS Image">
+
+            <img src="https://img.freepik.com/premium-vector/computer-design-blue-background-vector-illustration_24908-44354.jpg?w=360"
+                alt="JavaSCript Image">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png"
+                alt="PHP Images">
 
         </div>
     </div>
@@ -172,8 +344,8 @@
     <footer>
         <h1>All RIghts Reserved</h1>
     </footer>
-        
-    
+
+
 
 </body>
 
